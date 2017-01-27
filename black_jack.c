@@ -10,8 +10,6 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
-
 int		black_jack_hand(char *str)
 {
 	int		i;
@@ -59,8 +57,3 @@ int		black_jack_hand(char *str)
 	return (i);
 }
 
-int		main(int argc, char **argv)
-{
-	printf("%d", black_jack_hand(argv[1]));
-	return (0);
-}

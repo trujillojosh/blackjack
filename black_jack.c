@@ -6,9 +6,11 @@
 /*   By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/26 14:53:05 by jtrujill          #+#    #+#             */
-/*   Updated: 2017/01/26 16:51:01 by jtrujill         ###   ########.fr       */
+/*   Updated: 2017/01/28 15:19:18 by jtrujill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "blackjack.h"
 
 int		black_jack_hand(char *str)
 {
@@ -37,7 +39,7 @@ int		black_jack_hand(char *str)
 			i = i + 8;
 		else if (str[j] == '9')
 			i = i + 9;
-		else if ((str[j] == 'T') || (str[j] == 'J') || (str[j] == 'D') || (str[j] == 'K'))
+		else if ((str[j] == 'T') || (str[j] == 'J') || (str[j] == 'Q') || (str[j] == 'K'))
 			i = i + 10;
 		else if (str[j] == 'A')
 		{

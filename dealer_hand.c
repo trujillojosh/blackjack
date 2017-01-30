@@ -12,17 +12,24 @@
 
 #include "blackjack.h"
 
-char	*dealer_hand(void)
+int		dealer_hand(void)
 {
 	int		i;
+	int		res;
 	char	*hand;
 
 	i = 0;
+	res = 0;
 	hand = strdup((const char *)("......................"));
 	while (black_jack_hand(hand) < 17)
 	{
 		hand[i] = get_card();
 		i++;
 	}
-	return (hand);
+	ft_printcard(hand);
+	res = black_jack_hand(hand);
+	printf("%s", "------------------------");
+	printf("\n Dealer hand is --> %d", res);
+	printf("\n%s\n\n", "------------------------");
+	return (res);
 }

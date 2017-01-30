@@ -1,18 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   clear_buffer.c                                     :+:      :+:    :+:   */
+/*   print_hand.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/01/29 00:23:29 by jtrujill          #+#    #+#             */
-/*   Updated: 2017/01/29 00:35:44 by jtrujill         ###   ########.fr       */
+/*   Created: 2017/01/29 14:50:04 by jtrujill          #+#    #+#             */
+/*   Updated: 2017/01/29 14:50:34 by jtrujill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "blackjack.h"
 
-void	clear_buffer(void)
+void	print_hand(char *str, int i)
 {
-	while (getchar() != '\n')
-
+	ft_printcard(str);
+	printf("%s", "------------------------");
+	printf("\n Your  hand is --> %d", i);
+	printf("\n%s\n", "------------------------");
+}

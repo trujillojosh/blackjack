@@ -10,10 +10,10 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "blackjacl.h"
+#include "blackjack.h"
 
-void	print_instruction()
+void	print_instructions(void)
 {
-	printf("%s\n", "Put instructions here later);
+	printf("%s\n", "Put instructions here later");
 	begin_play();
 }

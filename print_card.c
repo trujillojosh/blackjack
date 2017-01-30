@@ -10,8 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-// #include "blackjack.h"
-#include <stdio.h>
+#include "blackjack.h"
 
 void	ft_printcard(char *str)
 {

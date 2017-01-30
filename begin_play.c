@@ -56,7 +56,7 @@ void	begin_play(void)
 		{
 			if ((player > dealer) || (dealer > 21))
 			{
-				chips = chips + (bet * 2);
+				chips = chips + bet;
 				printf("You win this round, new chip count is %d\n\n", chips);
 			}
 		}

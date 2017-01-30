@@ -18,13 +18,16 @@ void	ft_printcard(char *str)
 	int	 i;
 	int	 len;
 	int  tmp;
+	char hold;
 
 	i = 0;
 	len = 0;
+	hold = '\0';
 	if (str[1] == '\0')
 	{
-		str[1] = str[0];
+		hold = str[0];
 		str[0] = '?';
+		str[1] = hold;
 		str[2] = '\0';
 	}
 	while ((str[len] != '.') && (str[len] != '\0'))

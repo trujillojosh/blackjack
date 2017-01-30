@@ -46,7 +46,6 @@ void	begin_play(void)
 			printf("%s\n", "I see you are all in, I too like to live dangerously.");
 		}
 		sleep(2);
-		// printf("\nBet is %d.\n\n", bet);
 		init = get_card();
 		player = player_hand(init);
 		printf("\n%s\n\n", "Calculating dealer hand...");

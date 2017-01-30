@@ -12,10 +12,22 @@
 
 #include "blackjack.h"
 
-void	print_hand(char *str, int i)
+void	print_hand(char *str, int i, int whois)
 {
 	ft_printcard(str);
-	printf("%s", "------------------------");
-	printf("\n Your  hand is --> %d", i);
-	printf("\n%s\n", "------------------------");
+	if (whois == 2)
+	{
+		printf("%s", "------------------------");
+		printf("\n Dealer hand is --> %d", i);
+		printf("\n%s\n", "------------------------");		
+	}
+	else
+	{
+		printf("%s", "------------------------");
+		if (i > 21)
+			printf("\n BUST, your hand is %d", i);
+		else
+			printf("\n Your hand is --> %d", i);
+		printf("\n%s\n", "------------------------");
+	}
 }

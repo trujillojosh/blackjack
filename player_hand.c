@@ -12,7 +12,7 @@
 
 #include "blackjack.h"
 
-int		player_hand(void)
+int		player_hand(char dealer)
 {
 	int		i;
 	int		res;
@@ -27,12 +27,25 @@ int		player_hand(void)
 	i++;
 	hand[i] = get_card();
 	i++;
-	print_hand(hand, black_jack_hand(hand));
+	if (black_jack_hand(hand) == 21)
+	{
+		print_hand(hand, black_jack_hand(hand), 1);
+		return (21);
+	}
 	while (black_jack_hand(hand) < 21)
 	{
+		system("clear");
+		printf("%s", "..........................................\n\n");
+		print_hand(&dealer, black_jack_hand(&dealer), 2);
+		printf("%s", "\n..........................................\n\n");
+		print_hand(hand, black_jack_hand(hand), 1);
+		printf("%s", "\n..........................................\n");
 		memset(next, '\0', 50);
 		printf("\n%s", "Would you like to Hit or Stay? ");
 		fgets(next, sizeof(next), stdin);
+		// printf("%c", '\n');
+		// if (black_jack_hand(hand) == 21)
+		// 	return (21);
 		if ((next[0] == 'h') || (next[0] == 'H'))
 		{
 			hand[i] = get_card();
@@ -40,16 +53,10 @@ int		player_hand(void)
 		}
 		else
 		{
-			break ;
+			return (black_jack_hand(hand));
 		}
 		res = black_jack_hand(hand);
-		print_hand(hand, res);
+		print_hand(hand, res, 1);
 	}
-	//ft_printcard(hand);
-	//res = black_jack_hand(hand);
-	//printf("%s", "------------------------");
-	//printf("\n Your  hand is --> %d", res);
-	//printf("\n%s\n", "------------------------");
-	printf("\n%s\n\n", "Calculating dealer hand...");
 	return (res);
 }

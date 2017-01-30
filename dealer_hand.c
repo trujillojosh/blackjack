@@ -12,7 +12,7 @@
 
 #include "blackjack.h"
 
-int		dealer_hand(void)
+int		dealer_hand(char c)
 {
 	int		i;
 	int		res;
@@ -21,6 +21,8 @@ int		dealer_hand(void)
 	i = 0;
 	res = 0;
 	hand = strdup((const char *)("......................"));
+	hand[i] = c;
+	i++;
 	while (black_jack_hand(hand) < 17)
 	{
 		hand[i] = get_card();

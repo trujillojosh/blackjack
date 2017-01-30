@@ -37,16 +37,16 @@ void	begin_play(void)
 		printf("%s", "Enter bet amount: ");
 		fgets(buf, sizeof(buf), stdin);
 		printf("%c", '\n');
-		sleep(1);
 		bet = atoi(buf);
 		if (bet < 0)
 			bet = bet * -1;
 		if (bet >= chips)
 		{
 			bet = chips;
-			printf("\n%s\n", "I see you are all in, I too like to live dangerously.");
+			printf("%s\n", "I see you are all in, I too like to live dangerously.");
 		}
-		printf("\nBet is %d.\n\n", bet);
+		sleep(2);
+		// printf("\nBet is %d.\n\n", bet);
 		init = get_card();
 		player = player_hand(init);
 		printf("\n%s\n\n", "Calculating dealer hand...");

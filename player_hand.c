@@ -12,7 +12,7 @@
 
 #include "blackjack.h"
 
-int		player_hand(char dealer)
+int		player_hand(char *dealer)
 {
 	int		i;
 	int		res;
@@ -36,7 +36,7 @@ int		player_hand(char dealer)
 	{
 		system("clear");
 		printf("%s", "..........................................\n\n");
-		print_hand(&dealer, black_jack_hand(&dealer), 2);
+		print_hand(dealer, black_jack_hand(dealer), 2);
 		printf("%s", "\n..........................................\n\n");
 		print_hand(hand, black_jack_hand(hand), 1);
 		printf("%s", "\n..........................................\n");

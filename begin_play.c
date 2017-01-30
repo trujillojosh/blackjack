@@ -19,7 +19,7 @@ void	begin_play(void)
 	int		bet;
 	char	buf[50];
 	char	more[50];
-	char	init;
+	char	init[3];
 	int		player;
 	int		dealer;
 
@@ -29,6 +29,7 @@ void	begin_play(void)
 	{
 		sleep(1);
 		system("clear");
+		memset(init,'\0', 3);
 		player = 0;
 		dealer = 0;
 		bet = 0;
@@ -46,11 +47,12 @@ void	begin_play(void)
 			printf("%s\n", "I see you are all in, I too like to live dangerously.");
 		}
 		sleep(2);
-		init = get_card();
+		init[0] = '?';
+		init[1] = get_card();
 		player = player_hand(init);
 		printf("\n%s\n\n", "Calculating dealer hand...");
 		sleep(2);
-		dealer = dealer_hand(init);
+		dealer = dealer_hand(init[1]);
 		printf("\nPlayer is %d, dealer is %d\n\n", player, dealer);
 		if ((player <= 21) && ((player > dealer) || (dealer > 21)))
 		{
@@ -83,4 +85,6 @@ void	begin_play(void)
 	{
 		printf("\n\nHope you had fun playing, your final chip count is %d. Goodbye\n", chips);
 	}
+	sleep(4);
+	system("clear");
 }

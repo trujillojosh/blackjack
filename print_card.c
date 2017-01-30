@@ -26,9 +26,7 @@ void	ft_printcard(char *str)
 	if (str[1] == '\0')
 	{
 		hold = str[0];
-		str[0] = '?';
-		str[1] = hold;
-		str[2] = '\0';
+		
 	}
 	while ((str[len] != '.') && (str[len] != '\0'))
 	{

@@ -3,8 +3,7 @@ cd src > /dev/null
 make re > /dev/null
 make clean > /dev/null
 cat intro.txt
-read input
-echo "$input"
+read -s input
 if [ "$input" = "1" ] ; then
 	clear
 	cat credits.txt

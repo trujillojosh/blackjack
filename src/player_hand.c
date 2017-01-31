@@ -6,7 +6,7 @@
 /*   By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/29 14:39:47 by jtrujill          #+#    #+#             */
-/*   Updated: 2017/01/29 15:34:50 by jtrujill         ###   ########.fr       */
+/*   Updated: 2017/01/30 20:39:47 by jtrujill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ int		player_hand(char *dealer)
 		print_hand(hand, black_jack_hand(hand), 1);
 		printf("%s", "\n..........................................\n");
 		memset(next, '\0', 50);
-		printf("\n%s", "Would you like to Hit or Stay? ");
+		printf("\n%s", "Would you like to either Hit or Stand? ");
 		fgets(next, sizeof(next), stdin);
 		// printf("%c", '\n');
 		// if (black_jack_hand(hand) == 21)

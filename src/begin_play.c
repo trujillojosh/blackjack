@@ -6,7 +6,7 @@
 /*   By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/28 23:38:29 by jtrujill          #+#    #+#             */
-/*   Updated: 2017/01/29 14:22:31 by jtrujill         ###   ########.fr       */
+/*   Updated: 2017/01/30 20:39:58 by jtrujill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ void	begin_play(void)
 	int		player;
 	int		dealer;
 
-	chips = 100;
+	chips = 1000;
 	bet = 0;
 	while ((chips > 0) && (chips <= 999999999))
 	{
@@ -34,7 +34,15 @@ void	begin_play(void)
 		dealer = 0;
 		bet = 0;
 		memset(buf, '.', 50);
-		printf("\nNew Round, starting chip count is %d.\n", chips);
+		if (chips == 1000000)
+		{
+			if (small_loan() == 1)
+				{
+					chips = 0;
+					break ;
+				}
+		}
+		printf("\n\n\n\n\nNew Round, starting chip count is %d.\n", chips);
 		printf("%s", "Enter bet amount: ");
 		fgets(buf, sizeof(buf), stdin);
 		printf("%c", '\n');
@@ -85,6 +93,6 @@ void	begin_play(void)
 	{
 		printf("\n\nHope you had fun playing, your final chip count is %d. Goodbye\n", chips);
 	}
-	sleep(4);
+	sleep(3);
 	system("clear");
 }

@@ -1,0 +1,26 @@
+
+
+
+This game is a simple terminal based Blackjack program written in C. 
+It started as a basic blackjack calculator that was assigned to us as a 
+25 minute “Dash” project at School 42 in Fremont, California. I spent 
+a few days making it into the version you are currently playing. 
+I implemented a basic betting system, but left out splits, doubles, 
+and other features of Blackjack typically found in Casinos. Hope you enjoy!
+
+Creator: Josh Trujillo
+
+Email: jtrujill@student.42.us.org
+
+Github: https://github.com/trujillojosh
+
+
+    _   __        _              __
+   / | / /____   (_)_____ ___   / /
+  /  |/ // __ \ / // ___// _ \ / / 
+ / /|  // /_/ // // /__ /  __//_/  
+/_/ |_/ \____//_/ \___/ \___/(_)   
+                                   
+
+
+

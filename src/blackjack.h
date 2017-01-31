@@ -26,6 +26,5 @@ int		dealer_hand(char c);
 void	print_hand(char *str, int i, int whois);
 void	begin_play(void);
 int		player_hand(char *dealer);
-void	print_instructions(void);
 int 	small_loan(void);
 #endif

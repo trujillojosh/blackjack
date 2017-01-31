@@ -25,5 +25,7 @@
 
 			    Press [1] for Credits
 
+		    Press [2] for Linux Compatibility Mode
+
 
   --------------------------------------------------------------------

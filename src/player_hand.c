@@ -43,9 +43,6 @@ int		player_hand(char *dealer)
 		memset(next, '\0', 50);
 		printf("\n%s", "Would you like to either Hit or Stand? ");
 		fgets(next, sizeof(next), stdin);
-		// printf("%c", '\n');
-		// if (black_jack_hand(hand) == 21)
-		// 	return (21);
 		if ((next[0] == 'h') || (next[0] == 'H'))
 		{
 			hand[i] = get_card();

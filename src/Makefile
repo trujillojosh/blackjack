@@ -11,7 +11,7 @@
 # **************************************************************************** #
 
 NAME = blackjack
-INC = -I libft.h
+INC = -I blackjack.h
 FLAGS = gcc -Wall -Wextra -Werror
 
 SRCS = black_jack.c get_card.c print_card.c dealer_hand.c begin_play.c player_hand.c print_hand.c small_loan.c main.c

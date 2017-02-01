@@ -10,8 +10,8 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFT_H
-# define LIBFT_H
+#ifndef BLACKJACK_H
+# define BLACKJACK_H
 
 # include <stdio.h>
 # include <unistd.h>
@@ -27,4 +27,5 @@ void	print_hand(char *str, int i, int whois);
 void	begin_play(void);
 int		player_hand(char *dealer);
 int 	small_loan(void);
+
 #endif

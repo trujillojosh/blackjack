@@ -6,7 +6,7 @@
 /*   By: jtrujill <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/01/28 15:11:52 by jtrujill          #+#    #+#             */
-/*   Updated: 2017/01/29 19:54:23 by jtrujill         ###   ########.fr       */
+/*   Updated: 2017/02/01 21:51:10 by jtrujill         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,6 @@ void	print_hand(char *str, int i, int whois);
 void	begin_play(void);
 int		player_hand(char *dealer);
 int 	small_loan(void);
+void	high_score(int score);
 
 #endif

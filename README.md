@@ -1,5 +1,12 @@
 # blackjack_c
 
-This is a basic command line version of blackjack written in C. Features include a faux chip system, uniform card distrobution (not available in linux compatibility mode), basic card animation and a high score function.
+This is a basic command line version of blackjack written in C.<br />
+
+**Features**<br />
+-Support for OSX and Linux Distrobutions<br />
+-Faux chip and betting system.<br />
+-Uniform card distrobution (only when using OSX).<br />
+-Basic card animation.<br />
+-High Score tracking.<br />
 
 To run, simply clone the repository and run the "blackjack.sh" script.
